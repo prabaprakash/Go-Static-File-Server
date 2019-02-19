@@ -19,7 +19,7 @@ services:
       - traefik.backend=file
       - traefik.frontend.rule=Host:file.vaayadi.in
       - traefik.docker.network=proxy
-      - traefik.port=80
+      - traefik.port=8100
     networks:
       - internal
       - proxy
