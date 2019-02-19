@@ -11,6 +11,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    volumes:
+       - entertainment:/files
     environment:
       - NODE_ENV=prod
     labels:
@@ -21,3 +23,5 @@ services:
     networks:
       - internal
       - proxy
+volumes:
+  entertainment:
